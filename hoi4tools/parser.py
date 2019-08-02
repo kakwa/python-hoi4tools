@@ -21,7 +21,6 @@ tokens = (
   'RBRACKET',
   'LT',
   'GT',
-  'COMMENT',
   'STRING',
   'NUMBER',
   'QUOTED_STRING'
@@ -175,7 +174,7 @@ def Hoi4Yaccer():
     def p_error(p):
         print("Syntax error at '%s'" % p.value)
 
-    return yacc.yacc()
+    return yacc.yacc(debug=0, write_tables=0)
 
 def walk(directory):
     """Walk a given directory to recover interesting hoi4 files"""
