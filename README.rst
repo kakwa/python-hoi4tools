@@ -11,7 +11,7 @@ hoi4tools is released under MIT.
 Install
 =======
 
-.. sourcode:: bash
+.. sourcecode:: bash
 
   python setup.py install
 
